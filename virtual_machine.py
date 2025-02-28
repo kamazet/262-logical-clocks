@@ -130,39 +130,31 @@ class VirtualMachine:
                 # No message to process, generate random action
                 action = random.randint(1, 10)
                 
-                if 1 <= action <= 3:
+                if 1 <= action <= len(self.peers):
                     # Send message to other machines
                     self.logical_clock += 1
                     message = Message(self.machine_id, self.logical_clock)
                     
-                    if action == 1:
-                        # Send to one random machine
-                        target = random.choice(self.peers)
-                        self._send_message(target, message)
-                        target_id = target - (self.port - self.machine_id)
-                        self.logger.info(
-                            f"Sent message to Machine {target_id}, " +
-                            f"Logical clock: {self.logical_clock}"
-                        )
+                    # Send to one particular machine
+                    target = self.peers[action - 1]
+                    self._send_message(target, message)
+                    target_id = target - (self.port - self.machine_id)
+                    self.logger.info(
+                        f"Sent message to Machine {target_id}, " +
+                        f"Logical clock: {self.logical_clock}"
+                    )
                     
-                    elif action == 2:
-                        # Send to another random machine (different from action 1)
-                        target = random.choice(self.peers)
-                        self._send_message(target, message)
-                        target_id = target - (self.port - self.machine_id)
-                        self.logger.info(
-                            f"Sent message to Machine {target_id}, " +
-                            f"Logical clock: {self.logical_clock}"
-                        )
-                    
-                    elif action == 3:
-                        # Send to all other machines
-                        for peer in self.peers:
-                            self._send_message(peer, message)
-                        self.logger.info(
-                            f"Sent message to ALL other machines, " +
-                            f"Logical clock: {self.logical_clock}"
-                        )
+                elif action == len(self.peers) + 1:
+                    # Send to all other machines
+                    self.logical_clock += 1
+                    message = Message(self.machine_id, self.logical_clock)
+                
+                    for peer in self.peers:
+                        self._send_message(peer, message)
+                    self.logger.info(
+                        f"Sent message to ALL other machines, " +
+                        f"Logical clock: {self.logical_clock}"
+                    )
                 
                 else:
                     # Internal event
