@@ -20,6 +20,16 @@ def extract_value(message, pattern):
         return int(match.group(1))
     return None
 
+def get_tick_rate(filename):
+    """Extract tick rate from machine's initialization message"""
+    with open(filename, 'r') as f:
+        first_line = f.readline()
+        _, message = parse_log_line(first_line)
+        if message:
+            rate = extract_value(message, r"clock rate: (\d+)")
+            return rate
+    return None
+
 def read_log_file(filename):
     """Read a log file and extract logical clock and queue length values"""
     logical_clocks = []
@@ -41,17 +51,20 @@ def read_log_file(filename):
                 
     return logical_clocks, queue_lengths
 
-def write_value_file(filename, values, machine_count):
+def write_value_file(filename, values, machine_count, tick_rates):
     """Write values to file in chronological order with even column spacing"""
     # Define column widths
     timestamp_width = 10  # HH:MM:SS format
-    value_width = 12      # Width for each machine's value column
+    
+    # Calculate required width for machine columns based on header length
+    machine_headers = [f"Machine {i} ({tick_rates[i]} ticks/s)" for i in range(machine_count)]
+    value_width = max(len(header) for header in machine_headers) + 4  # Add some padding
     
     with open(filename, 'w') as f:
         # Write header
         header = "Timestamp".ljust(timestamp_width)
         for i in range(machine_count):
-            header += f" | {'Machine ' + str(i):<{value_width-3}}"
+            header += f" | {machine_headers[i]:<{value_width-3}}"
         f.write(header + "\n")
         
         # Write separator line
@@ -98,6 +111,15 @@ def main():
             print(f"Error: Log file '{log_file}' does not exist")
             sys.exit(1)
     
+    # Get tick rates for all machines
+    tick_rates = []
+    for log_file in log_files:
+        rate = get_tick_rate(log_file)
+        if rate is None:
+            print(f"Error: Could not find tick rate in {log_file}")
+            sys.exit(1)
+        tick_rates.append(rate)
+    
     # Read all log files and extract values
     logical_clocks = []
     queue_lengths = []
@@ -112,8 +134,8 @@ def main():
     queue_length_file = os.path.join(log_folder, "queue_length.txt")
     
     # Write values to files
-    write_value_file(logical_clock_file, logical_clocks, len(log_files))
-    write_value_file(queue_length_file, queue_lengths, len(log_files))
+    write_value_file(logical_clock_file, logical_clocks, len(log_files), tick_rates)
+    write_value_file(queue_length_file, queue_lengths, len(log_files), tick_rates)
     
     print(f"Logical clock values written to {logical_clock_file}")
     print(f"Queue lengths written to {queue_length_file}")
