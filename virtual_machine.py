@@ -28,13 +28,12 @@ class VirtualMachine:
         
         # Set up logging
         log_filename = f"machine_{machine_id}.log"
-        logging.basicConfig(
-            filename=log_filename,
-            level=logging.INFO,
-            format='%(asctime)s - %(message)s',
-            datefmt='%Y-%m-%d %H:%M:%S'
-        )
         self.logger = logging.getLogger(f"Machine-{machine_id}")
+        self.logger.setLevel(logging.INFO)
+        handler = logging.FileHandler(log_filename, mode='w')
+        handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
+        self.logger.addHandler(handler)
+        
         
         # Set up socket for receiving messages
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
