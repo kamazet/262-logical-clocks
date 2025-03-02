@@ -7,10 +7,13 @@ import logging
 from message import Message
 
 class VirtualMachine:
-    def __init__(self, machine_id, num_machines, port_base=9000):
+    def __init__(self, machine_id, num_machines, host, port_base):
         self.machine_id = machine_id
         self.num_machines = num_machines
         self.logical_clock = 0
+        self.host = host
+        # for debugging
+        self.last_received_message = None
         
         # Determine clock rate (1-6 ticks per second)
         self.clock_rate = random.randint(1, 6)
@@ -38,7 +41,7 @@ class VirtualMachine:
         # Set up socket for receiving messages
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.server_socket.bind(('localhost', self.port))
+        self.server_socket.bind((self.host, self.port))
         self.server_socket.listen(5)
         
         # Flag to control the machine's execution
@@ -91,6 +94,7 @@ class VirtualMachine:
                 # Process the received message
                 message = Message.from_json(data.decode())
                 self.message_queue.put(message)
+                self.last_received_message = message
         except Exception as e:
             if self.running:
                 self.logger.error(f"Error handling client: {e}")
@@ -99,14 +103,17 @@ class VirtualMachine:
     
     def _send_message(self, peer_port, message):
         """Send a message to a peer machine"""
+        client_socket = None
         try:
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            client_socket.connect(('localhost', peer_port))
+            client_socket.connect((self.host, peer_port))
             client_socket.sendall(message.to_json().encode())
-            client_socket.close()
         except Exception as e:
             self.logger.error(f"Error sending message to port {peer_port}: {e}")
-    
+        finally:
+            if client_socket:
+                client_socket.close()
+
     def _run_clock_cycle(self):
         """Run the main clock cycle of the virtual machine"""
         while self.running:
@@ -132,12 +139,16 @@ class VirtualMachine:
                 
                 if 1 <= action <= len(self.peers):
                     # Send message to other machines
-                    self.logical_clock += 1
                     message = Message(self.machine_id, self.logical_clock)
                     
                     # Send to one particular machine
                     target = self.peers[action - 1]
                     self._send_message(target, message)
+
+                    # update logical clock
+                    self.logical_clock += 1
+
+                    # log operation
                     target_id = target - (self.port - self.machine_id)
                     self.logger.info(
                         f"Sent message to Machine {target_id}, " +
@@ -146,11 +157,14 @@ class VirtualMachine:
                     
                 elif action == len(self.peers) + 1:
                     # Send to all other machines
-                    self.logical_clock += 1
                     message = Message(self.machine_id, self.logical_clock)
                 
                     for peer in self.peers:
                         self._send_message(peer, message)
+
+                    # update logical clock
+                    self.logical_clock += 1
+
                     self.logger.info(
                         f"Sent message to ALL other machines, " +
                         f"Logical clock: {self.logical_clock}"

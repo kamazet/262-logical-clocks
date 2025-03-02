@@ -1,5 +1,6 @@
 import time
 import threading
+import json
 from virtual_machine import VirtualMachine
 
 def main():
@@ -9,9 +10,16 @@ def main():
     # Create and start the virtual machines
     machines = []
     threads = []
+
+    # parse config.json
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+    host = config['host']
+    port_base = config['port_base']
+
     
     for i in range(num_machines):
-        vm = VirtualMachine(i, num_machines)
+        vm = VirtualMachine(i, num_machines, host, port_base)
         machines.append(vm)
         
         thread = threading.Thread(target=vm.start)
