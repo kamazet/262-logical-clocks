@@ -61,6 +61,12 @@ class TestVirtualMachine(unittest.TestCase):
 
         # wait for machines to start
         time.sleep(2)
+
+        # assert queues are empty
+        self.assertTrue(sender.message_queue.empty())
+        self.assertTrue(receiver.message_queue.empty())
+
+        # send a message from sender to receiver
         sender_time = sender.logical_clock
         message = Message(sender.machine_id, sender_time)
         sender._send_message(receiver.port, message)
