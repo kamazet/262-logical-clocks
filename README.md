@@ -11,11 +11,11 @@ This project implements a simulation of an asynchronous distributed system with 
 ├── message.py  
 ├── message_tests.py  
 ├── run{n} (n is the run number and specifications of the trial)  
-│   ├── logical_clock.txt  
-│   ├── machine_0.log  
-│   ├── machine_1.log  
-│   ├── machine_2.log  
-│   └── queue_length.txt  
+│&emsp;├── logical_clock.txt  
+│&emsp;├── machine_0.log  
+│&emsp;├── machine_1.log  
+│&emsp;├── machine_2.log  
+│&emsp;└── queue_length.txt  
 ├── virtual_machine.py  
 └── virtual_machine_tests.py  
 
