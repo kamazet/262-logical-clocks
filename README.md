@@ -3,24 +3,21 @@
 This project implements a simulation of an asynchronous distributed system with multiple virtual machines running at different speeds, each maintaining its own logical clock. The system demonstrates concepts like Lamport's logical clocks, message passing, and asynchronous communication.
 
 ## Project Structure 
-.
-├── README.md
-├── __pycache__
-│   ├── message.cpython-39.pyc
-│   └── virtual_machine.cpython-39.pyc
-├── analyze_logs.py
-├── config.json
-├── main.py
-├── message.py
-├── message_tests.py
-├── run{n} (n is the run number and specifications of the trial)
-│   ├── logical_clock.txt
-│   ├── machine_0.log
-│   ├── machine_1.log
-│   ├── machine_2.log
-│   └── queue_length.txt
-├── virtual_machine.py
-└── virtual_machine_tests.py
+.  
+├── README.md  
+├── analyze_logs.py  
+├── config.json  
+├── main.py  
+├── message.py  
+├── message_tests.py  
+├── run{n} (n is the run number and specifications of the trial)  
+│   ├── logical_clock.txt  
+│   ├── machine_0.log  
+│   ├── machine_1.log  
+│   ├── machine_2.log  
+│   └── queue_length.txt  
+├── virtual_machine.py  
+└── virtual_machine_tests.py  
 
 
 ## Components
