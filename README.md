@@ -4,18 +4,23 @@ This project implements a simulation of an asynchronous distributed system with 
 
 ## Project Structure 
 .
-├── main.py # Entry point for running the simulation
-├── virtual_machine.py # Virtual machine implementation
-├── message.py # Message class for inter-machine communication
-├── analyze_logs.py # Log analysis script
-└── run_folders/ # Simulation run outputs
-
-└── run1/ # Example run folder
-    ├── machine_0.log
-    ├── machine_1.log
-    ├── machine_2.log
-    ├── logical_clock.txt
-    └── queue_length.txt
+├── README.md
+├── __pycache__
+│   ├── message.cpython-39.pyc
+│   └── virtual_machine.cpython-39.pyc
+├── analyze_logs.py
+├── config.json
+├── main.py
+├── message.py
+├── message_tests.py
+├── run{n} (n is the run number and specifications of the trial)
+│   ├── logical_clock.txt
+│   ├── machine_0.log
+│   ├── machine_1.log
+│   ├── machine_2.log
+│   └── queue_length.txt
+├── virtual_machine.py
+└── virtual_machine_tests.py
 
 
 ## Components
@@ -56,10 +61,10 @@ This project implements a simulation of an asynchronous distributed system with 
 ## Usage
 
 ### Running the Simulation
-````
+```
 bash
 python main.py
-````
+```
 
 This will:
 1. Create 3 virtual machines with random clock rates
@@ -67,10 +72,10 @@ This will:
 3. Generate log files for each machine
 
 ### Analyzing the Logs
-````
+```
 bash
 python analyze_logs.py <run_folder>
-````
+```
 
 Example:
 bash
