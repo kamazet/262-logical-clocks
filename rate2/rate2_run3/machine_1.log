@@ -1,0 +1,59 @@
+2025-03-05 00:59:23 - Machine initialized with clock rate: 1 ticks/second
+2025-03-05 00:59:25 - Sent message to Machine 0, Logical clock: 1
+2025-03-05 00:59:26 - Sent message to Machine 2, Logical clock: 2
+2025-03-05 00:59:27 - Internal event, Logical clock: 3
+2025-03-05 00:59:28 - Received message from Machine 0, Queue length: 1, Logical clock: 5
+2025-03-05 00:59:29 - Received message from Machine 0, Queue length: 0, Logical clock: 6
+2025-03-05 00:59:30 - Internal event, Logical clock: 7
+2025-03-05 00:59:31 - Sent message to ALL other machines, Logical clock: 8
+2025-03-05 00:59:32 - Sent message to Machine 0, Logical clock: 9
+2025-03-05 00:59:33 - Sent message to Machine 0, Logical clock: 10
+2025-03-05 00:59:34 - Sent message to ALL other machines, Logical clock: 11
+2025-03-05 00:59:35 - Received message from Machine 2, Queue length: 0, Logical clock: 15
+2025-03-05 00:59:36 - Internal event, Logical clock: 16
+2025-03-05 00:59:37 - Received message from Machine 0, Queue length: 0, Logical clock: 24
+2025-03-05 00:59:38 - Received message from Machine 0, Queue length: 0, Logical clock: 26
+2025-03-05 00:59:39 - Internal event, Logical clock: 27
+2025-03-05 00:59:40 - Received message from Machine 0, Queue length: 1, Logical clock: 29
+2025-03-05 00:59:41 - Received message from Machine 0, Queue length: 0, Logical clock: 30
+2025-03-05 00:59:42 - Internal event, Logical clock: 31
+2025-03-05 00:59:43 - Received message from Machine 2, Queue length: 0, Logical clock: 32
+2025-03-05 00:59:44 - Sent message to Machine 2, Logical clock: 33
+2025-03-05 00:59:45 - Internal event, Logical clock: 34
+2025-03-05 00:59:46 - Received message from Machine 0, Queue length: 1, Logical clock: 41
+2025-03-05 00:59:47 - Received message from Machine 0, Queue length: 0, Logical clock: 42
+2025-03-05 00:59:48 - Internal event, Logical clock: 43
+2025-03-05 00:59:49 - Sent message to ALL other machines, Logical clock: 44
+2025-03-05 00:59:50 - Internal event, Logical clock: 45
+2025-03-05 00:59:51 - Internal event, Logical clock: 46
+2025-03-05 00:59:52 - Received message from Machine 0, Queue length: 0, Logical clock: 54
+2025-03-05 00:59:53 - Sent message to Machine 0, Logical clock: 55
+2025-03-05 00:59:54 - Received message from Machine 2, Queue length: 0, Logical clock: 56
+2025-03-05 00:59:55 - Received message from Machine 0, Queue length: 0, Logical clock: 60
+2025-03-05 00:59:56 - Received message from Machine 0, Queue length: 0, Logical clock: 62
+2025-03-05 00:59:57 - Received message from Machine 2, Queue length: 0, Logical clock: 63
+2025-03-05 00:59:58 - Received message from Machine 0, Queue length: 0, Logical clock: 65
+2025-03-05 00:59:59 - Internal event, Logical clock: 66
+2025-03-05 01:00:00 - Received message from Machine 0, Queue length: 0, Logical clock: 70
+2025-03-05 01:00:01 - Received message from Machine 0, Queue length: 0, Logical clock: 71
+2025-03-05 01:00:02 - Received message from Machine 0, Queue length: 0, Logical clock: 73
+2025-03-05 01:00:03 - Received message from Machine 0, Queue length: 0, Logical clock: 75
+2025-03-05 01:00:04 - Received message from Machine 0, Queue length: 0, Logical clock: 77
+2025-03-05 01:00:05 - Internal event, Logical clock: 78
+2025-03-05 01:00:06 - Received message from Machine 0, Queue length: 0, Logical clock: 81
+2025-03-05 01:00:07 - Received message from Machine 0, Queue length: 0, Logical clock: 83
+2025-03-05 01:00:08 - Sent message to ALL other machines, Logical clock: 84
+2025-03-05 01:00:09 - Internal event, Logical clock: 85
+2025-03-05 01:00:10 - Received message from Machine 0, Queue length: 0, Logical clock: 89
+2025-03-05 01:00:11 - Sent message to ALL other machines, Logical clock: 90
+2025-03-05 01:00:12 - Received message from Machine 2, Queue length: 0, Logical clock: 91
+2025-03-05 01:00:13 - Internal event, Logical clock: 92
+2025-03-05 01:00:14 - Internal event, Logical clock: 93
+2025-03-05 01:00:15 - Received message from Machine 0, Queue length: 0, Logical clock: 99
+2025-03-05 01:00:16 - Received message from Machine 0, Queue length: 0, Logical clock: 101
+2025-03-05 01:00:17 - Sent message to ALL other machines, Logical clock: 102
+2025-03-05 01:00:18 - Internal event, Logical clock: 103
+2025-03-05 01:00:19 - Received message from Machine 0, Queue length: 0, Logical clock: 108
+2025-03-05 01:00:20 - Sent message to Machine 0, Logical clock: 109
+2025-03-05 01:00:21 - Received message from Machine 0, Queue length: 0, Logical clock: 112
+2025-03-05 01:00:22 - Received message from Machine 0, Queue length: 0, Logical clock: 114

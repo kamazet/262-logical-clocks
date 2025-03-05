@@ -1,0 +1,59 @@
+2025-03-05 01:11:21 - Machine initialized with clock rate: 1 ticks/second
+2025-03-05 01:11:23 - Internal event, Logical clock: 1
+2025-03-05 01:11:24 - Received message from Machine 0, Queue length: 0, Logical clock: 2
+2025-03-05 01:11:25 - Internal event, Logical clock: 3
+2025-03-05 01:11:26 - Internal event, Logical clock: 4
+2025-03-05 01:11:27 - Received message from Machine 1, Queue length: 0, Logical clock: 14
+2025-03-05 01:11:28 - Internal event, Logical clock: 15
+2025-03-05 01:11:29 - Internal event, Logical clock: 16
+2025-03-05 01:11:30 - Internal event, Logical clock: 17
+2025-03-05 01:11:31 - Internal event, Logical clock: 18
+2025-03-05 01:11:32 - Sent message to ALL other machines, Logical clock: 19
+2025-03-05 01:11:33 - Internal event, Logical clock: 20
+2025-03-05 01:11:34 - Internal event, Logical clock: 21
+2025-03-05 01:11:35 - Internal event, Logical clock: 22
+2025-03-05 01:11:36 - Internal event, Logical clock: 23
+2025-03-05 01:11:37 - Internal event, Logical clock: 24
+2025-03-05 01:11:38 - Internal event, Logical clock: 25
+2025-03-05 01:11:39 - Internal event, Logical clock: 26
+2025-03-05 01:11:40 - Internal event, Logical clock: 27
+2025-03-05 01:11:41 - Internal event, Logical clock: 28
+2025-03-05 01:11:42 - Internal event, Logical clock: 29
+2025-03-05 01:11:43 - Internal event, Logical clock: 30
+2025-03-05 01:11:44 - Internal event, Logical clock: 31
+2025-03-05 01:11:45 - Internal event, Logical clock: 32
+2025-03-05 01:11:46 - Internal event, Logical clock: 33
+2025-03-05 01:11:47 - Internal event, Logical clock: 34
+2025-03-05 01:11:48 - Internal event, Logical clock: 35
+2025-03-05 01:11:49 - Internal event, Logical clock: 36
+2025-03-05 01:11:50 - Internal event, Logical clock: 37
+2025-03-05 01:11:51 - Received message from Machine 1, Queue length: 0, Logical clock: 111
+2025-03-05 01:11:52 - Internal event, Logical clock: 112
+2025-03-05 01:11:53 - Internal event, Logical clock: 113
+2025-03-05 01:11:54 - Internal event, Logical clock: 114
+2025-03-05 01:11:55 - Internal event, Logical clock: 115
+2025-03-05 01:11:56 - Internal event, Logical clock: 116
+2025-03-05 01:11:57 - Internal event, Logical clock: 117
+2025-03-05 01:11:58 - Internal event, Logical clock: 118
+2025-03-05 01:11:59 - Internal event, Logical clock: 119
+2025-03-05 01:12:00 - Internal event, Logical clock: 120
+2025-03-05 01:12:01 - Internal event, Logical clock: 121
+2025-03-05 01:12:02 - Internal event, Logical clock: 122
+2025-03-05 01:12:03 - Internal event, Logical clock: 123
+2025-03-05 01:12:04 - Internal event, Logical clock: 124
+2025-03-05 01:12:05 - Internal event, Logical clock: 125
+2025-03-05 01:12:06 - Internal event, Logical clock: 126
+2025-03-05 01:12:07 - Internal event, Logical clock: 127
+2025-03-05 01:12:08 - Internal event, Logical clock: 128
+2025-03-05 01:12:09 - Internal event, Logical clock: 129
+2025-03-05 01:12:10 - Internal event, Logical clock: 130
+2025-03-05 01:12:11 - Internal event, Logical clock: 131
+2025-03-05 01:12:12 - Sent message to ALL other machines, Logical clock: 132
+2025-03-05 01:12:13 - Internal event, Logical clock: 133
+2025-03-05 01:12:14 - Internal event, Logical clock: 134
+2025-03-05 01:12:15 - Internal event, Logical clock: 135
+2025-03-05 01:12:16 - Internal event, Logical clock: 136
+2025-03-05 01:12:17 - Internal event, Logical clock: 137
+2025-03-05 01:12:18 - Internal event, Logical clock: 138
+2025-03-05 01:12:19 - Internal event, Logical clock: 139
+2025-03-05 01:12:20 - Internal event, Logical clock: 140

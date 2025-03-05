@@ -1,0 +1,286 @@
+2025-03-05 01:33:57 - Machine initialized with clock rate: 5 ticks/second
+2025-03-05 01:33:59 - Sent message to ALL other machines, Logical clock: 1
+2025-03-05 01:33:59 - Received message from Machine 1, Queue length: 0, Logical clock: 2
+2025-03-05 01:33:59 - Internal event, Logical clock: 3
+2025-03-05 01:33:59 - Sent message to Machine 2, Logical clock: 4
+2025-03-05 01:34:00 - Sent message to ALL other machines, Logical clock: 5
+2025-03-05 01:34:00 - Sent message to ALL other machines, Logical clock: 6
+2025-03-05 01:34:00 - Internal event, Logical clock: 7
+2025-03-05 01:34:00 - Sent message to Machine 2, Logical clock: 8
+2025-03-05 01:34:00 - Internal event, Logical clock: 9
+2025-03-05 01:34:01 - Sent message to Machine 2, Logical clock: 10
+2025-03-05 01:34:01 - Internal event, Logical clock: 11
+2025-03-05 01:34:01 - Sent message to ALL other machines, Logical clock: 12
+2025-03-05 01:34:01 - Sent message to Machine 1, Logical clock: 13
+2025-03-05 01:34:01 - Sent message to Machine 2, Logical clock: 14
+2025-03-05 01:34:02 - Sent message to ALL other machines, Logical clock: 15
+2025-03-05 01:34:02 - Internal event, Logical clock: 16
+2025-03-05 01:34:02 - Sent message to Machine 1, Logical clock: 17
+2025-03-05 01:34:02 - Sent message to Machine 2, Logical clock: 18
+2025-03-05 01:34:02 - Sent message to Machine 2, Logical clock: 19
+2025-03-05 01:34:03 - Sent message to Machine 2, Logical clock: 20
+2025-03-05 01:34:03 - Internal event, Logical clock: 21
+2025-03-05 01:34:03 - Sent message to Machine 2, Logical clock: 22
+2025-03-05 01:34:03 - Sent message to Machine 2, Logical clock: 23
+2025-03-05 01:34:04 - Sent message to ALL other machines, Logical clock: 24
+2025-03-05 01:34:04 - Sent message to ALL other machines, Logical clock: 25
+2025-03-05 01:34:04 - Sent message to Machine 1, Logical clock: 26
+2025-03-05 01:34:04 - Sent message to Machine 2, Logical clock: 27
+2025-03-05 01:34:04 - Sent message to Machine 2, Logical clock: 28
+2025-03-05 01:34:05 - Sent message to Machine 2, Logical clock: 29
+2025-03-05 01:34:05 - Sent message to Machine 2, Logical clock: 30
+2025-03-05 01:34:05 - Internal event, Logical clock: 31
+2025-03-05 01:34:05 - Sent message to Machine 2, Logical clock: 32
+2025-03-05 01:34:05 - Sent message to Machine 1, Logical clock: 33
+2025-03-05 01:34:06 - Internal event, Logical clock: 34
+2025-03-05 01:34:06 - Sent message to Machine 1, Logical clock: 35
+2025-03-05 01:34:06 - Internal event, Logical clock: 36
+2025-03-05 01:34:06 - Sent message to Machine 2, Logical clock: 37
+2025-03-05 01:34:06 - Sent message to ALL other machines, Logical clock: 38
+2025-03-05 01:34:07 - Sent message to Machine 2, Logical clock: 39
+2025-03-05 01:34:07 - Sent message to ALL other machines, Logical clock: 40
+2025-03-05 01:34:07 - Sent message to ALL other machines, Logical clock: 41
+2025-03-05 01:34:07 - Sent message to Machine 1, Logical clock: 42
+2025-03-05 01:34:07 - Sent message to ALL other machines, Logical clock: 43
+2025-03-05 01:34:08 - Sent message to Machine 2, Logical clock: 44
+2025-03-05 01:34:08 - Internal event, Logical clock: 45
+2025-03-05 01:34:08 - Sent message to Machine 2, Logical clock: 46
+2025-03-05 01:34:08 - Internal event, Logical clock: 47
+2025-03-05 01:34:08 - Sent message to ALL other machines, Logical clock: 48
+2025-03-05 01:34:09 - Internal event, Logical clock: 49
+2025-03-05 01:34:09 - Sent message to Machine 2, Logical clock: 50
+2025-03-05 01:34:09 - Sent message to ALL other machines, Logical clock: 51
+2025-03-05 01:34:09 - Sent message to Machine 2, Logical clock: 52
+2025-03-05 01:34:09 - Sent message to ALL other machines, Logical clock: 53
+2025-03-05 01:34:10 - Sent message to ALL other machines, Logical clock: 54
+2025-03-05 01:34:10 - Sent message to Machine 2, Logical clock: 55
+2025-03-05 01:34:10 - Sent message to Machine 1, Logical clock: 56
+2025-03-05 01:34:10 - Sent message to Machine 2, Logical clock: 57
+2025-03-05 01:34:10 - Sent message to Machine 2, Logical clock: 58
+2025-03-05 01:34:11 - Sent message to ALL other machines, Logical clock: 59
+2025-03-05 01:34:11 - Sent message to ALL other machines, Logical clock: 60
+2025-03-05 01:34:11 - Sent message to Machine 1, Logical clock: 61
+2025-03-05 01:34:11 - Sent message to Machine 1, Logical clock: 62
+2025-03-05 01:34:11 - Sent message to Machine 1, Logical clock: 63
+2025-03-05 01:34:12 - Sent message to Machine 2, Logical clock: 64
+2025-03-05 01:34:12 - Internal event, Logical clock: 65
+2025-03-05 01:34:12 - Sent message to Machine 2, Logical clock: 66
+2025-03-05 01:34:12 - Sent message to Machine 2, Logical clock: 67
+2025-03-05 01:34:12 - Internal event, Logical clock: 68
+2025-03-05 01:34:13 - Internal event, Logical clock: 69
+2025-03-05 01:34:13 - Internal event, Logical clock: 70
+2025-03-05 01:34:13 - Sent message to Machine 1, Logical clock: 71
+2025-03-05 01:34:13 - Sent message to Machine 1, Logical clock: 72
+2025-03-05 01:34:13 - Sent message to ALL other machines, Logical clock: 73
+2025-03-05 01:34:14 - Sent message to Machine 1, Logical clock: 74
+2025-03-05 01:34:14 - Sent message to Machine 2, Logical clock: 75
+2025-03-05 01:34:14 - Internal event, Logical clock: 76
+2025-03-05 01:34:14 - Internal event, Logical clock: 77
+2025-03-05 01:34:14 - Internal event, Logical clock: 78
+2025-03-05 01:34:15 - Sent message to Machine 1, Logical clock: 79
+2025-03-05 01:34:15 - Sent message to Machine 1, Logical clock: 80
+2025-03-05 01:34:15 - Received message from Machine 2, Queue length: 0, Logical clock: 81
+2025-03-05 01:34:15 - Sent message to Machine 1, Logical clock: 82
+2025-03-05 01:34:16 - Sent message to ALL other machines, Logical clock: 83
+2025-03-05 01:34:16 - Internal event, Logical clock: 84
+2025-03-05 01:34:16 - Internal event, Logical clock: 85
+2025-03-05 01:34:16 - Received message from Machine 2, Queue length: 0, Logical clock: 86
+2025-03-05 01:34:16 - Sent message to Machine 1, Logical clock: 87
+2025-03-05 01:34:17 - Internal event, Logical clock: 88
+2025-03-05 01:34:17 - Received message from Machine 2, Queue length: 0, Logical clock: 89
+2025-03-05 01:34:17 - Sent message to Machine 2, Logical clock: 90
+2025-03-05 01:34:17 - Sent message to Machine 1, Logical clock: 91
+2025-03-05 01:34:17 - Sent message to Machine 2, Logical clock: 92
+2025-03-05 01:34:18 - Sent message to ALL other machines, Logical clock: 93
+2025-03-05 01:34:18 - Internal event, Logical clock: 94
+2025-03-05 01:34:18 - Sent message to Machine 1, Logical clock: 95
+2025-03-05 01:34:18 - Sent message to ALL other machines, Logical clock: 96
+2025-03-05 01:34:18 - Internal event, Logical clock: 97
+2025-03-05 01:34:19 - Sent message to Machine 1, Logical clock: 98
+2025-03-05 01:34:19 - Sent message to ALL other machines, Logical clock: 99
+2025-03-05 01:34:19 - Internal event, Logical clock: 100
+2025-03-05 01:34:19 - Sent message to ALL other machines, Logical clock: 101
+2025-03-05 01:34:19 - Sent message to Machine 1, Logical clock: 102
+2025-03-05 01:34:20 - Sent message to ALL other machines, Logical clock: 103
+2025-03-05 01:34:20 - Internal event, Logical clock: 104
+2025-03-05 01:34:20 - Sent message to ALL other machines, Logical clock: 105
+2025-03-05 01:34:20 - Sent message to Machine 2, Logical clock: 106
+2025-03-05 01:34:20 - Sent message to Machine 1, Logical clock: 107
+2025-03-05 01:34:21 - Sent message to ALL other machines, Logical clock: 108
+2025-03-05 01:34:21 - Internal event, Logical clock: 109
+2025-03-05 01:34:21 - Sent message to Machine 1, Logical clock: 110
+2025-03-05 01:34:21 - Sent message to Machine 1, Logical clock: 111
+2025-03-05 01:34:21 - Sent message to Machine 1, Logical clock: 112
+2025-03-05 01:34:22 - Sent message to Machine 2, Logical clock: 113
+2025-03-05 01:34:22 - Sent message to Machine 1, Logical clock: 114
+2025-03-05 01:34:22 - Internal event, Logical clock: 115
+2025-03-05 01:34:22 - Received message from Machine 2, Queue length: 0, Logical clock: 116
+2025-03-05 01:34:22 - Internal event, Logical clock: 117
+2025-03-05 01:34:23 - Sent message to ALL other machines, Logical clock: 118
+2025-03-05 01:34:23 - Sent message to Machine 1, Logical clock: 119
+2025-03-05 01:34:23 - Sent message to Machine 2, Logical clock: 120
+2025-03-05 01:34:23 - Sent message to ALL other machines, Logical clock: 121
+2025-03-05 01:34:23 - Internal event, Logical clock: 122
+2025-03-05 01:34:24 - Sent message to Machine 2, Logical clock: 123
+2025-03-05 01:34:24 - Internal event, Logical clock: 124
+2025-03-05 01:34:24 - Sent message to Machine 1, Logical clock: 125
+2025-03-05 01:34:24 - Sent message to Machine 1, Logical clock: 126
+2025-03-05 01:34:24 - Received message from Machine 2, Queue length: 0, Logical clock: 127
+2025-03-05 01:34:25 - Sent message to Machine 1, Logical clock: 128
+2025-03-05 01:34:25 - Received message from Machine 2, Queue length: 0, Logical clock: 129
+2025-03-05 01:34:25 - Received message from Machine 2, Queue length: 0, Logical clock: 130
+2025-03-05 01:34:25 - Sent message to Machine 2, Logical clock: 131
+2025-03-05 01:34:25 - Sent message to Machine 2, Logical clock: 132
+2025-03-05 01:34:26 - Internal event, Logical clock: 133
+2025-03-05 01:34:26 - Sent message to ALL other machines, Logical clock: 134
+2025-03-05 01:34:26 - Sent message to ALL other machines, Logical clock: 135
+2025-03-05 01:34:26 - Sent message to Machine 2, Logical clock: 136
+2025-03-05 01:34:27 - Sent message to Machine 2, Logical clock: 137
+2025-03-05 01:34:27 - Sent message to Machine 1, Logical clock: 138
+2025-03-05 01:34:27 - Sent message to Machine 2, Logical clock: 139
+2025-03-05 01:34:27 - Internal event, Logical clock: 140
+2025-03-05 01:34:27 - Sent message to ALL other machines, Logical clock: 141
+2025-03-05 01:34:28 - Sent message to Machine 2, Logical clock: 142
+2025-03-05 01:34:28 - Internal event, Logical clock: 143
+2025-03-05 01:34:28 - Sent message to Machine 2, Logical clock: 144
+2025-03-05 01:34:28 - Sent message to ALL other machines, Logical clock: 145
+2025-03-05 01:34:28 - Sent message to Machine 2, Logical clock: 146
+2025-03-05 01:34:29 - Sent message to Machine 1, Logical clock: 147
+2025-03-05 01:34:29 - Internal event, Logical clock: 148
+2025-03-05 01:34:29 - Internal event, Logical clock: 149
+2025-03-05 01:34:29 - Sent message to Machine 2, Logical clock: 150
+2025-03-05 01:34:29 - Sent message to Machine 2, Logical clock: 151
+2025-03-05 01:34:30 - Sent message to Machine 2, Logical clock: 152
+2025-03-05 01:34:30 - Sent message to ALL other machines, Logical clock: 153
+2025-03-05 01:34:30 - Sent message to ALL other machines, Logical clock: 154
+2025-03-05 01:34:30 - Internal event, Logical clock: 155
+2025-03-05 01:34:30 - Sent message to ALL other machines, Logical clock: 156
+2025-03-05 01:34:31 - Internal event, Logical clock: 157
+2025-03-05 01:34:31 - Sent message to Machine 2, Logical clock: 158
+2025-03-05 01:34:31 - Sent message to Machine 1, Logical clock: 159
+2025-03-05 01:34:31 - Sent message to ALL other machines, Logical clock: 160
+2025-03-05 01:34:31 - Sent message to Machine 1, Logical clock: 161
+2025-03-05 01:34:32 - Sent message to Machine 1, Logical clock: 162
+2025-03-05 01:34:32 - Internal event, Logical clock: 163
+2025-03-05 01:34:32 - Sent message to Machine 1, Logical clock: 164
+2025-03-05 01:34:32 - Received message from Machine 2, Queue length: 0, Logical clock: 165
+2025-03-05 01:34:32 - Sent message to Machine 2, Logical clock: 166
+2025-03-05 01:34:33 - Sent message to Machine 1, Logical clock: 167
+2025-03-05 01:34:33 - Sent message to Machine 2, Logical clock: 168
+2025-03-05 01:34:33 - Sent message to ALL other machines, Logical clock: 169
+2025-03-05 01:34:33 - Sent message to Machine 2, Logical clock: 170
+2025-03-05 01:34:33 - Sent message to Machine 2, Logical clock: 171
+2025-03-05 01:34:34 - Internal event, Logical clock: 172
+2025-03-05 01:34:34 - Internal event, Logical clock: 173
+2025-03-05 01:34:34 - Sent message to Machine 2, Logical clock: 174
+2025-03-05 01:34:34 - Sent message to Machine 1, Logical clock: 175
+2025-03-05 01:34:34 - Sent message to Machine 1, Logical clock: 176
+2025-03-05 01:34:35 - Sent message to ALL other machines, Logical clock: 177
+2025-03-05 01:34:35 - Internal event, Logical clock: 178
+2025-03-05 01:34:35 - Sent message to Machine 2, Logical clock: 179
+2025-03-05 01:34:35 - Sent message to Machine 2, Logical clock: 180
+2025-03-05 01:34:36 - Sent message to Machine 1, Logical clock: 181
+2025-03-05 01:34:36 - Internal event, Logical clock: 182
+2025-03-05 01:34:36 - Internal event, Logical clock: 183
+2025-03-05 01:34:36 - Sent message to Machine 1, Logical clock: 184
+2025-03-05 01:34:36 - Received message from Machine 2, Queue length: 0, Logical clock: 185
+2025-03-05 01:34:37 - Sent message to ALL other machines, Logical clock: 186
+2025-03-05 01:34:37 - Sent message to ALL other machines, Logical clock: 187
+2025-03-05 01:34:37 - Sent message to ALL other machines, Logical clock: 188
+2025-03-05 01:34:37 - Internal event, Logical clock: 189
+2025-03-05 01:34:37 - Sent message to ALL other machines, Logical clock: 190
+2025-03-05 01:34:38 - Sent message to Machine 1, Logical clock: 191
+2025-03-05 01:34:38 - Sent message to Machine 2, Logical clock: 192
+2025-03-05 01:34:38 - Sent message to Machine 2, Logical clock: 193
+2025-03-05 01:34:38 - Sent message to Machine 1, Logical clock: 194
+2025-03-05 01:34:38 - Internal event, Logical clock: 195
+2025-03-05 01:34:39 - Sent message to Machine 1, Logical clock: 196
+2025-03-05 01:34:39 - Sent message to Machine 2, Logical clock: 197
+2025-03-05 01:34:39 - Sent message to Machine 1, Logical clock: 198
+2025-03-05 01:34:39 - Sent message to ALL other machines, Logical clock: 199
+2025-03-05 01:34:39 - Sent message to Machine 1, Logical clock: 200
+2025-03-05 01:34:40 - Internal event, Logical clock: 201
+2025-03-05 01:34:40 - Sent message to ALL other machines, Logical clock: 202
+2025-03-05 01:34:40 - Sent message to Machine 1, Logical clock: 203
+2025-03-05 01:34:40 - Sent message to ALL other machines, Logical clock: 204
+2025-03-05 01:34:40 - Internal event, Logical clock: 205
+2025-03-05 01:34:41 - Internal event, Logical clock: 206
+2025-03-05 01:34:41 - Sent message to Machine 2, Logical clock: 207
+2025-03-05 01:34:41 - Internal event, Logical clock: 208
+2025-03-05 01:34:41 - Sent message to Machine 1, Logical clock: 209
+2025-03-05 01:34:41 - Received message from Machine 2, Queue length: 0, Logical clock: 210
+2025-03-05 01:34:42 - Sent message to Machine 2, Logical clock: 211
+2025-03-05 01:34:42 - Sent message to Machine 2, Logical clock: 212
+2025-03-05 01:34:42 - Sent message to Machine 1, Logical clock: 213
+2025-03-05 01:34:42 - Sent message to Machine 2, Logical clock: 214
+2025-03-05 01:34:42 - Sent message to Machine 2, Logical clock: 215
+2025-03-05 01:34:43 - Sent message to Machine 1, Logical clock: 216
+2025-03-05 01:34:43 - Sent message to Machine 2, Logical clock: 217
+2025-03-05 01:34:43 - Sent message to Machine 1, Logical clock: 218
+2025-03-05 01:34:43 - Sent message to Machine 2, Logical clock: 219
+2025-03-05 01:34:43 - Internal event, Logical clock: 220
+2025-03-05 01:34:44 - Sent message to ALL other machines, Logical clock: 221
+2025-03-05 01:34:44 - Internal event, Logical clock: 222
+2025-03-05 01:34:44 - Sent message to Machine 1, Logical clock: 223
+2025-03-05 01:34:44 - Sent message to ALL other machines, Logical clock: 224
+2025-03-05 01:34:44 - Internal event, Logical clock: 225
+2025-03-05 01:34:45 - Internal event, Logical clock: 226
+2025-03-05 01:34:45 - Sent message to ALL other machines, Logical clock: 227
+2025-03-05 01:34:45 - Sent message to ALL other machines, Logical clock: 228
+2025-03-05 01:34:45 - Internal event, Logical clock: 229
+2025-03-05 01:34:46 - Sent message to Machine 1, Logical clock: 230
+2025-03-05 01:34:46 - Received message from Machine 2, Queue length: 0, Logical clock: 231
+2025-03-05 01:34:46 - Internal event, Logical clock: 232
+2025-03-05 01:34:46 - Sent message to Machine 1, Logical clock: 233
+2025-03-05 01:34:46 - Received message from Machine 2, Queue length: 0, Logical clock: 234
+2025-03-05 01:34:47 - Sent message to Machine 1, Logical clock: 235
+2025-03-05 01:34:47 - Sent message to ALL other machines, Logical clock: 236
+2025-03-05 01:34:47 - Sent message to Machine 2, Logical clock: 237
+2025-03-05 01:34:47 - Sent message to Machine 1, Logical clock: 238
+2025-03-05 01:34:47 - Internal event, Logical clock: 239
+2025-03-05 01:34:48 - Sent message to Machine 2, Logical clock: 240
+2025-03-05 01:34:48 - Internal event, Logical clock: 241
+2025-03-05 01:34:48 - Sent message to Machine 1, Logical clock: 242
+2025-03-05 01:34:48 - Received message from Machine 2, Queue length: 0, Logical clock: 243
+2025-03-05 01:34:48 - Received message from Machine 2, Queue length: 0, Logical clock: 244
+2025-03-05 01:34:49 - Sent message to ALL other machines, Logical clock: 245
+2025-03-05 01:34:49 - Sent message to ALL other machines, Logical clock: 246
+2025-03-05 01:34:49 - Sent message to ALL other machines, Logical clock: 247
+2025-03-05 01:34:49 - Sent message to ALL other machines, Logical clock: 248
+2025-03-05 01:34:49 - Sent message to Machine 2, Logical clock: 249
+2025-03-05 01:34:50 - Sent message to ALL other machines, Logical clock: 250
+2025-03-05 01:34:50 - Internal event, Logical clock: 251
+2025-03-05 01:34:50 - Sent message to Machine 2, Logical clock: 252
+2025-03-05 01:34:50 - Sent message to Machine 2, Logical clock: 253
+2025-03-05 01:34:50 - Sent message to ALL other machines, Logical clock: 254
+2025-03-05 01:34:51 - Internal event, Logical clock: 255
+2025-03-05 01:34:51 - Sent message to Machine 2, Logical clock: 256
+2025-03-05 01:34:51 - Sent message to Machine 2, Logical clock: 257
+2025-03-05 01:34:51 - Internal event, Logical clock: 258
+2025-03-05 01:34:51 - Sent message to Machine 1, Logical clock: 259
+2025-03-05 01:34:52 - Sent message to Machine 1, Logical clock: 260
+2025-03-05 01:34:52 - Sent message to Machine 2, Logical clock: 261
+2025-03-05 01:34:52 - Sent message to ALL other machines, Logical clock: 262
+2025-03-05 01:34:52 - Sent message to Machine 1, Logical clock: 263
+2025-03-05 01:34:52 - Sent message to Machine 1, Logical clock: 264
+2025-03-05 01:34:53 - Sent message to Machine 1, Logical clock: 265
+2025-03-05 01:34:53 - Sent message to ALL other machines, Logical clock: 266
+2025-03-05 01:34:53 - Sent message to Machine 2, Logical clock: 267
+2025-03-05 01:34:53 - Sent message to ALL other machines, Logical clock: 268
+2025-03-05 01:34:53 - Sent message to ALL other machines, Logical clock: 269
+2025-03-05 01:34:54 - Internal event, Logical clock: 270
+2025-03-05 01:34:54 - Sent message to ALL other machines, Logical clock: 271
+2025-03-05 01:34:54 - Internal event, Logical clock: 272
+2025-03-05 01:34:54 - Internal event, Logical clock: 273
+2025-03-05 01:34:54 - Sent message to Machine 1, Logical clock: 274
+2025-03-05 01:34:55 - Sent message to ALL other machines, Logical clock: 275
+2025-03-05 01:34:55 - Sent message to ALL other machines, Logical clock: 276
+2025-03-05 01:34:55 - Internal event, Logical clock: 277
+2025-03-05 01:34:55 - Sent message to Machine 1, Logical clock: 278
+2025-03-05 01:34:56 - Sent message to Machine 1, Logical clock: 279
+2025-03-05 01:34:56 - Sent message to Machine 1, Logical clock: 280
+2025-03-05 01:34:56 - Sent message to Machine 1, Logical clock: 281
+2025-03-05 01:34:56 - Received message from Machine 2, Queue length: 0, Logical clock: 282
+2025-03-05 01:34:56 - Sent message to Machine 1, Logical clock: 283
+2025-03-05 01:34:57 - Sent message to Machine 2, Logical clock: 284
+2025-03-05 01:34:57 - Sent message to Machine 1, Logical clock: 285

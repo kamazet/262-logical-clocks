@@ -135,7 +135,7 @@ class VirtualMachine:
                 )
             else:
                 # No message to process, generate random action
-                action = random.randint(1, 10)
+                action = random.randint(1, 4)
                 
                 if 1 <= action <= len(self.peers):
                     # Send message to other machines

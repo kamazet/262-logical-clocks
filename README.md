@@ -110,6 +110,7 @@ Timestamp | Machine 0 (5 ticks/s) | Machine 1 (2 ticks/s) | Machine 2 (1 ticks/s
    - Send message to all machines
 4. **Logical Clock Updates**:
    - Increment on internal events
+   - Increment on send messages
    - Set to max(local, received) + 1 on message receipt
 
 ## Implementation Details
@@ -131,15 +132,9 @@ Timestamp | Machine 0 (5 ticks/s) | Machine 1 (2 ticks/s) | Machine 2 (1 ticks/s
 - Visualization of logical clock progression
 - Monitoring of message queue dynamics
 
-## Error Handling
-- Socket connection failures
-- Missing log files
-- Invalid log formats
-- Initialization failures
-
 ## Requirements
 - Python 3.6+
-- Standard library modules:
+- No additional modules should need to be installed, as they are standard:
   - threading
   - socket
   - logging
