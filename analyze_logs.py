@@ -3,6 +3,8 @@ import sys
 import os
 from datetime import datetime
 from collections import defaultdict
+import matplotlib.pyplot as plt
+from datetime import timedelta
 
 def parse_log_line(line):
     """Parse a single log line into timestamp and message"""
@@ -86,6 +88,72 @@ def write_value_file(filename, values, machine_count, tick_rates):
             
             f.write(row + "\n")
 
+def plot_data(logical_clocks, queue_lengths, output_dir, tick_rates):
+    # Unzip the data into separate lists for each machine
+    logical_timestamps = [[timestamp for timestamp, _ in machine] for machine in logical_clocks]
+    logical_values = [[value for _, value in machine] for machine in logical_clocks]
+    
+    queue_timestamps = [[timestamp for timestamp, _ in machine] for machine in queue_lengths]
+    queue_values = [[value for _, value in machine] for machine in queue_lengths]
+
+    # Plot for Logical Clock
+    plt.figure()
+    for i in range(len(logical_values)):
+        plt.plot(logical_timestamps[i], logical_values[i], label=f'Machine {i+1}')
+        
+    plt.xlabel('Time')
+    plt.ylabel('Logical Clock')
+    plt.title('Logical Clock Over Time')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/logical_clock.png")
+
+    # Plot for Jumps
+    plt.figure()
+    colors = ['red', 'blue', 'green']
+    for i in range(len(logical_values)):
+        jumps = [j for j in range(1, len(logical_values[i])) if logical_values[i][j] > logical_values[i][j - 1]]
+        jump_times = [logical_timestamps[i][j] for j in jumps]
+        jump_values = [logical_values[i][j] - logical_values[i][j - 1] for j in jumps]
+        
+        plt.plot(jump_times, jump_values, color=colors[i], label=f'Jumps Machine {i+1}')
+
+    plt.xlabel('Time')
+    plt.ylabel('Logical Clock Jumps')
+    plt.title('Logical Clock Jumps for Each Machine')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/logical_clock_jumps.png")
+
+    # Plot for Queue Length
+    plt.figure()
+    for i in range(len(queue_values)):
+        plt.plot(queue_timestamps[i], queue_values[i], label=f'Machine {i+1}')
+    plt.xlabel('Time')
+    plt.ylabel('Queue Length')
+    plt.title('Queue Length Over Time')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/queue_length.png")
+
+    # Plot Drift
+    plt.figure()
+    for i in range(len(logical_values)):
+        # Calculate logical time based on tick rate
+        start_time = logical_timestamps[i][0]  # Assuming the first timestamp is the start time
+        logical_time = [start_time + timedelta(seconds=(logical_values[i][j] / tick_rates[i])) for j in range(len(logical_values[i]))]
+        
+        # Calculate drift
+        drift_values = [(logical_time[j] - logical_timestamps[i][j]).total_seconds() for j in range(len(logical_time))]
+        plt.plot(logical_timestamps[i], drift_values, label=f'Drift Machine {i+1}', color=colors[i])
+
+    plt.xlabel('Time')
+    plt.ylabel('Drift (Logical Clock - System Time)')
+    plt.title('Drift of Logical Clocks Compared to System Time')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/drift.png")
+
 def main():
     if len(sys.argv) != 2:
         print("Usage: python analyze_logs.py <path_to_log_folder>")
@@ -137,8 +205,11 @@ def main():
     write_value_file(logical_clock_file, logical_clocks, len(log_files), tick_rates)
     write_value_file(queue_length_file, queue_lengths, len(log_files), tick_rates)
     
+    # Plot data
+    plot_data(logical_clocks, queue_lengths, log_folder, tick_rates)
+    
     print(f"Logical clock values written to {logical_clock_file}")
     print(f"Queue lengths written to {queue_length_file}")
 
 if __name__ == "__main__":
-    main() 
+    main()
