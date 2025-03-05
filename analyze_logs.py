@@ -136,24 +136,6 @@ def plot_data(logical_clocks, queue_lengths, output_dir, tick_rates):
     plt.tight_layout()
     plt.savefig(f"{output_dir}/queue_length.png")
 
-    # Plot Drift
-    plt.figure()
-    for i in range(len(logical_values)):
-        # Calculate logical time based on tick rate
-        start_time = logical_timestamps[i][0]  # Assuming the first timestamp is the start time
-        logical_time = [start_time + timedelta(seconds=(logical_values[i][j] / tick_rates[i])) for j in range(len(logical_values[i]))]
-        
-        # Calculate drift
-        drift_values = [(logical_time[j] - logical_timestamps[i][j]).total_seconds() for j in range(len(logical_time))]
-        plt.plot(logical_timestamps[i], drift_values, label=f'Drift Machine {i+1}', color=colors[i])
-
-    plt.xlabel('Time')
-    plt.ylabel('Drift (Logical Clock - System Time)')
-    plt.title('Drift of Logical Clocks Compared to System Time')
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(f"{output_dir}/drift.png")
-
 def main():
     if len(sys.argv) != 2:
         print("Usage: python analyze_logs.py <path_to_log_folder>")
